@@ -16,11 +16,12 @@ for time in range(101):
     if time in out_time_dictionary:
         car_count -= out_time_dictionary[time]
     
-    if car_count == 1:
-        result += a
-    elif car_count == 2:
-        result += b * 2
-    elif car_count == 3:
-        result += c * 3
+    match car_count:
+        case 1:
+            result += a
+        case 2:
+            result += b * 2
+        case 3:
+            result += c * 3
 
 print(result)
