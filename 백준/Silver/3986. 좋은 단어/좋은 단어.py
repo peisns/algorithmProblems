@@ -4,6 +4,10 @@ good_word_count = 0
 
 for i in range(N):
     word = input()
+    
+    if len(word) % 2 != 0: 
+        continue
+    
     stack = []
     
     for character in word:
