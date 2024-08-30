@@ -1,4 +1,6 @@
-import copy
+import sys
+input = sys.stdin.readline
+
 n, m = [int(x) for x in input().split()]
 nums = [[int(x)for x in input().split()] for _ in range(n)]
 coordinates = [[int(x)for x in input().split()] for _ in range(m)]
